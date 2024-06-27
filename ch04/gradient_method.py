@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pylab as plt
 from gradient_2d import numerical_gradient
 
+import matplotlib
+matplotlib.use('TkAgg')  # 或 'Qt5Agg' 或 'Agg'，根据你的环境选择合适的后端
 
 def gradient_descent(f, init_x, lr=0.01, step_num=100):
     x = init_x

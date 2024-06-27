@@ -72,7 +72,7 @@ def _convert_numpy():
     return dataset
 
 def init_mnist():
-    download_mnist()
+    # download_mnist()
     dataset = _convert_numpy()
     print("Creating pickle file ...")
     with open(save_file, 'wb') as f:

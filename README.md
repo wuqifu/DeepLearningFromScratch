@@ -1,9 +1,5 @@
 # 深度学习入门
 
-关注微信公众号：`正版乔`
-
-如果你觉得不错，可以提供小额打赏，谢谢支持。[面包🍞 面包多 / 顿顿饭](https://dun.mianbaoduo.com/@qiao)
-
 ## 文件结构
 
 |文件夹名   |说明                         |
@@ -38,11 +34,6 @@ $ python man.py
 $ cd ../ch05
 $ python train_nueralnet.py
 ```
-
-## 使用许可
-
-本源代码使用[MIT许可协议](http://www.opensource.org/licenses/MIT)。
-无论是否为商业行为，均可自由使用。
 
 ## 勘误表
 

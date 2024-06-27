@@ -2,13 +2,15 @@
 import numpy as np
 import matplotlib.pylab as plt
 
+import matplotlib
+matplotlib.use('TkAgg')  # 或 'Qt5Agg' 或 'Agg'，根据你的环境选择合适的后端
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))    
 
 
 def step_function(x):
-    return np.array(x > 0, dtype=np.int)
+    return np.array(x > 0, dtype=int)
 
 x = np.arange(-5.0, 5.0, 0.1)
 y1 = sigmoid(x)

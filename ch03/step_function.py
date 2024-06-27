@@ -2,9 +2,11 @@
 import numpy as np
 import matplotlib.pylab as plt
 
+import matplotlib
+matplotlib.use('TkAgg')  # 或 'Qt5Agg' 或 'Agg'，根据你的环境选择合适的后端
 
 def step_function(x):
-    return np.array(x > 0, dtype=np.int)
+    return np.array(x > 0, dtype=int)
 
 X = np.arange(-5.0, 5.0, 0.1)
 Y = step_function(X)

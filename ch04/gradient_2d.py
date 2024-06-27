@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pylab as plt
 from mpl_toolkits.mplot3d import Axes3D
 
+import matplotlib
+matplotlib.use('TkAgg')  # 或 'Qt5Agg' 或 'Agg'，根据你的环境选择合适的后端
 
 def _numerical_gradient_no_batch(f, x):
     h = 1e-4 # 0.0001
